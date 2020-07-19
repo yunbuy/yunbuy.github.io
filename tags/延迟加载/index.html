@@ -18,7 +18,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>标签：延迟加载 - 建站教程</title>
+  <title>Tag: 延迟加载 - 建站教程</title>
   
 
   
@@ -682,50 +682,15 @@
 <p>WordPress图片延迟加载的介绍</p>
 <p>预加载，顾名思义，在超出网站可视范围内，图片不做加载，等到用户滚动浏览器窗口，图片元素到达可视范围内，开始加载图片，这样的方式可以打打的节省网站的资源和加快网站加载的速度，所以对于图片较多的wordpress网站来说，图片预加载功能还是非常的好的。</p>
 <p>图片预加载的核心：lazyload。</p>
-<p>对于lazyload有网站编程经验的朋友应该都很熟悉，图片预加载的功能实现就是这个js文件来实现的。</p>
-<p>使用lazyload有两种方式，一种是使用插件，一种是直接集成在主题中的非插件方式，下面我们首先介绍一下非插件实现lazyload：</p>
-<p>新版 jquery.lazyload.js 插件，要求必须给图片地址添加一个data-original属性，例如下：</p>
-<pre><code>&lt;img class=&quot;lazy&quot; data-original=&quot;img/example.jpg&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;</code></pre><p>所以，我们要给wordpress主题里，有图片展示的地方加上data-original属性才行。</p>
-<p>然后往header.php中加载文件：</p>
-<pre><code>&lt;script src=&quot;&lt;?php echo get_template_directory_uri(); ?&gt;/js/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
-
-&lt;script src=&quot;&lt;?php echo get_template_directory_uri(); ?&gt;/js/jquery.lazyload.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-
-    $(function() {
-
-        $(&quot;img&quot;).lazyload({
-
-            effect:&quot;fadeIn&quot;
-
-          });
-
-        });
-
-&lt;/script&gt;</code></pre><p>加载了js这些后，网站里图片就能够实现延迟加载了，但是文章里的图片貌似还没有实现WordPress图片延迟加载，下面就是给wordpress里文章里插入的图片加data-original属性了，将下面代码贴进wordpress主题文件夹的functions.php内</p>
-<pre><code>add_filter (&apos;the_content&apos;, &apos;lazyload&apos;);
-
-function lazyload($content) {
-
-    $loadimg_url=get_bloginfo(&apos;template_directory&apos;).&apos;/images/loading.gif&apos;;
-
-    if(!is_feed()||!is_robots) {
-
-        $content=preg_replace(&apos;/&lt;img(.+)src=[\&apos;&quot;]([^\&apos;&quot;]+)[\&apos;&quot;](.*)&gt;/i&apos;,&quot;&lt;img\$1data-original=\&quot;\$2\&quot; src=\&quot;$loadimg_url\&quot;\$3&gt;\n&lt;noscript&gt;\$0&lt;/noscript&gt;&quot;,$content);
-
-    }
-
-    return $content;
-
-}</code></pre><p>经过这两步骤，网站就实现了WordPress图片延迟加载了！</p>
-<br>
-
-<p><code>原文地址：http://www.bokebu.com/wordpresstu-pian-yan-chi-jia-zai-de-shi-xian-dai-ma-pian.html</code></p>
-
       
     </div>
     
+      
+        <div class="button readmore">
+          <a href="/wpweb/wordpress-dm-yz.html">
+            阅读全文 <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
       
     
   </section>

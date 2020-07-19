@@ -18,7 +18,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档：2020 - 建站教程</title>
+  <title>Archive: 2020 - 建站教程</title>
   
 
   
@@ -697,88 +697,15 @@
 <p>如果不希望使用域名也可以跳过这一步。</p>
 <p><img src="https://pic.downk.cc/item/5f13036214195aa5948311cb.jpg" alt=""></p>
 <p>因为首购优惠只有一次，所以建议域名放在最后再买，可以先买<a href="https://cloud.tencent.com/act/cps/redirect?redirect=1062&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d&from=console" target="_blank" rel="noopener">云服务器</a>。</p>
-<h2 id="二、服务器"><a href="#二、服务器" class="headerlink" title="二、服务器"></a>二、服务器</h2><p>1，选择好域名后，开始选择服务器。这里以腾讯云为例。</p>
-<p>如果你是学生或者你是第一次购买的话，是会有很大的优惠力度的<br>直达链接——<a href="https://cloud.tencent.com/act/cps/redirect?redirect=1062&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d&from=console" target="_blank" rel="noopener">【腾讯云官网服务器活动】</a></p>
-<p>一般选择一款入门性能的服务器1核2G就足够个人博客使用了。</p>
-<p><img src="https://pic.downk.cc/item/5f1303a314195aa594832976.jpg" alt=""></p>
-<p>服务器的配置选择，活动地域选择离你最近的，操作系统选择Windows server 2008 或者 2012 都可以。地区选择离自己最近的。</p>
-<p>选择好这些以后，其他只需要默认即可。</p>
-<h2 id="三、配置"><a href="#三、配置" class="headerlink" title="三、配置"></a>三、配置</h2><p>下单以后，右上角信箱会显示有你刚刚买的服务器账号和密码，拿到账号和密码。</p>
-<p><img src="https://pic.downk.cc/item/5f1303eb14195aa594833dd8.jpg" alt=""></p>
-<p>右下角选择云服务器会有服务器的IP地址，选择公网的IP地址就行。</p>
-<p><img src="https://pic.downk.cc/item/5f13042b14195aa594834ffb.jpg" alt=""></p>
-<p>按住键盘的电脑的win+R键（或者点击左下角开始，搜索运行）输入mstsc</p>
-<p><img src="https://pic.downk.cc/item/5f13043b14195aa594835575.jpg" alt=""></p>
-<p>回车进入远程连接页面</p>
-<p>计算机填写你的服务器的公网IP地址<br>用户名一般是Administrator<br>密码查看上面获取到的账号密码。</p>
-<p><img src="https://pic.downk.cc/item/5f13044b14195aa594835b33.jpg" alt=""></p>
-<p>进入服务器以后。安装xampp集成环境工具（可以在本地下载好以后，拖入服务器；也可以直接在服务器里面下载），工具从本页面下载，也可以从百度上下载站进行下载。</p>
-<p>下载地址：<a href="https://cloud.189.cn/t/JzyiYvFZ7Rr2" target="_blank" rel="noopener">下载</a></p>
-<p>刚打开安装包的时候可能会有一个提示，ok跳过即可</p>
-<p><img src="https://pic.downk.cc/item/5f13049d14195aa5948378ee.jpg" alt=""></p>
-<p>然后一路next，默认不用修改</p>
-<p><img src="https://pic.downk.cc/item/5f1304b114195aa594837f7f.jpg" alt=""></p>
-<p><img src="https://pic.downk.cc/item/5f1304c214195aa59483843d.jpg" alt=""></p>
-<p>安装好以后，他会在你服务器的这个位置：</p>
-<p><img src="https://pic.downk.cc/item/5f1304da14195aa594838aa2.jpg" alt=""></p>
-<p>这里首先不要启动先，先依次配置一下</p>
-<p><img src="https://pic.downk.cc/item/5f1304ed14195aa594838ff5.jpg" alt=""></p>
-<p>如果你发现主面板mysql 右边已经有数字，说明你的系统已经开启了对应的服务占用了当前的端口，请打开任务管理器，将mysqld.exe进程关掉。（因为使用集成工具比较好管理服务，所以建议关掉系统的，改用工具安装的Mysql服务。）</p>
-<p>如果主面板右边没有对应的数字，请跳过这一步</p>
-<p><img src="https://pic.downk.cc/item/5f13051f14195aa59483a10b.jpg" alt=""></p>
-<p><img src="https://pic.downk.cc/item/5f13053014195aa59483a688.jpg" alt=""></p>
-<p>关闭后：数字消失。</p>
-<p><img src="https://pic.downk.cc/item/5f13054c14195aa59483aef4.jpg" alt=""></p>
-<p>安装apache与Mysql服务，点击旁边的×号即可安装</p>
-<p><img src="https://pic.downk.cc/item/5f13056414195aa59483b6d4.jpg" alt=""></p>
-<p>如图即表示安装成功</p>
-<p><img src="https://pic.downk.cc/item/5f13057914195aa59483be87.jpg" alt=""></p>
-<p>然后依次点击右侧start按钮开启服务，如图即是开启成功</p>
-<p><img src="https://pic.downk.cc/item/5f13059514195aa59483c673.jpg" alt=""></p>
-<p>安装成功以后，环境这一部分已经解决。</p>
-<h2 id="四、安装WordPress程序"><a href="#四、安装WordPress程序" class="headerlink" title="四、安装WordPress程序"></a>四、安装WordPress程序</h2><p>将WordPress程序包里面的所有文件粘贴在环境根目录下</p>
-<p>程序包可以从网上下载：<a href="https://cn.wordpress.org/download/" target="_blank" rel="noopener">下载地址</a></p>
-<p><img src="https://pic.downk.cc/item/5f1305fc14195aa59483e528.jpg" alt=""></p>
-<p>返回我们的电脑，打开浏览器，输入<a href="http://xxx.xxx.xxx.xxx(服务器公有IP号):80" target="_blank" rel="noopener">http://xxx.xxx.xxx.xxx(服务器公有IP号):80</a></p>
-<p><img src="https://pic.downk.cc/item/5f13062314195aa59483f137.jpg" alt=""></p>
-<p>然后就会跳转到绑定数据库安装程序，到这里说明前面的步骤都没有问题。</p>
-<p><img src="https://pic.downk.cc/item/5f13064514195aa59483fd25.jpg" alt=""></p>
-<h2 id="五、数据库"><a href="#五、数据库" class="headerlink" title="五、数据库"></a>五、数据库</h2><p>接下来需要配置数据库的文件</p>
-<p>首先创建一个数据库给WordPress使用</p>
-<p><img src="https://pic.downk.cc/item/5f13066a14195aa5948408ad.jpg" alt=""></p>
-<p>将数据库名设置成刚刚创建的<br>数据库用户名只能是root<br>数据库密码修改成为空！！！！！！</p>
-<p>设置为空是因为，在Windows服务器下，记事本是有点毒的，内容编码不太一样，建议先留空，后续再进行修改。否则连接不上数据库的。</p>
-<p>不要设置中文！！！</p>
-<p><img src="https://pic.downk.cc/item/5f1306ca14195aa594842809.jpg" alt=""></p>
-<p>然后回到自己的电脑，点击现在开始安装</p>
-<p><img src="https://pic.downk.cc/item/5f1306d914195aa594842cda.jpg" alt=""></p>
-<p>点击提交，看到如图页面，说明已经连接上数据库没有问题了。</p>
-<p><img src="https://pic.downk.cc/item/5f1306e614195aa594843119.jpg" alt=""></p>
-<p>然后填写网站的信息。</p>
-<p><img src="https://pic.downk.cc/item/5f1306fa14195aa5948439a7.jpg" alt=""></p>
-<p>填写后，网站已经建成。</p>
-<p>网站后台http:xxx.xxx.xxx.xxx/wp-admin/</p>
-<p><img src="https://pic.downk.cc/item/5f13070a14195aa594843fd3.jpg" alt=""></p>
-<p>网站地址http:xxx.xxx.xxx.xxx(你的公有IP)</p>
-<p><img src="https://pic.downk.cc/item/5f13071c14195aa59484463c.jpg" alt=""></p>
-<h2 id="六、域名绑定"><a href="#六、域名绑定" class="headerlink" title="六、域名绑定"></a>六、域名绑定</h2><p>在我们一开始就已经买好的域名，进入域名解析</p>
-<h3 id="国内大陆服务器需要备案"><a href="#国内大陆服务器需要备案" class="headerlink" title="国内大陆服务器需要备案"></a>国内大陆服务器需要备案</h3><p>注意：国内的服务器绑定域名需要备案的哦，备案时长大概7个工作日。根据指示一步步上传站长资料即可。</p>
-<p><img src="https://pic.downk.cc/item/5f13076214195aa594845ccf.jpg" alt=""></p>
-<p><img src="https://pic.downk.cc/item/5f1307c314195aa5948479ba.jpg" alt=""></p>
-<p>然后等待十分钟，你就可以通过域名，以及www.域名访问你的网站了</p>
-<h3 id="免备案云服务器"><a href="#免备案云服务器" class="headerlink" title="免备案云服务器"></a>免备案云服务器</h3><p>如果你不想备案，想要直接就可以上线访问的话，可以选择你香港或者海外的云服务器，根据个人使用体验，腾讯云的香港云服务器比阿里云的香港服务器速度更快，体验更好。<a href="https://cloud.tencent.com/act/pro/overseas?fromSource=gwzcw.1293314.1293314.1293314&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d" target="_blank" rel="noopener">【点击进入腾讯云香港及海外云服务器优惠专区】</a></p>
-<h2 id="七、结束语"><a href="#七、结束语" class="headerlink" title="七、结束语"></a>七、结束语</h2><p>到此为止，在Windows操作系统上的WordPress建站程序已经安装完毕，你可以开始经营属于自己的网站了。<br>如果没有特殊需求，个人还是建议使用linux系统搭建网站。</p>
-<h3 id="附优惠购买链接："><a href="#附优惠购买链接：" class="headerlink" title="附优惠购买链接："></a>附优惠购买链接：</h3><p><a href="https://www.aliyun.com/minisite/goods?userCode=xbifxhv7" target="_blank" rel="noopener">【阿里云最新优惠活动及价值2000元代金券领取地址】</a></p>
-<p><a href="https://cloud.tencent.com/act/cps/redirect?redirect=1062&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d&from=console" target="_blank" rel="noopener">【腾讯云最新优惠秒杀活动】</a></p>
-<p><a href="https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d&from=console" target="_blank" rel="noopener">【腾讯云新手代金券价值2860元大礼包】</a></p>
-<br>
-<br>
-
-<p><code>原文地址：https://xiaomoujia.cn/2020/04/19/387/</code></p>
-
       
     </div>
     
+      
+        <div class="button readmore">
+          <a href="/cloudweb/windows-jianzhan-wordpress.html">
+            阅读全文 <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
       
     
   </section>
@@ -906,78 +833,15 @@
 <p><a href="https://wanwang.aliyun.com/?source=5176.11533457&userCode=xbifxhv7&type=copy" target="_blank" rel="noopener">【点击进入阿里云域名购买页面】</a></p>
 <p>因为首购优惠只有一次，所以建议域名放在最后再买，可以先买<a href="https://www.aliyun.com/product/ecs?source=5176.11533457&userCode=xbifxhv7&type=copy" target="_blank" rel="noopener">云服务器</a>。</p>
 <p><img src="https://pic.downk.cc/item/5f12f87a14195aa5947f4ec7.jpg" alt=""></p>
-<h2 id="二、服务器"><a href="#二、服务器" class="headerlink" title="二、服务器"></a>二、服务器</h2><p>首先要买一台服务器，如果你是学生或者你是第一次购买的话，在官网活动页面会有很大的优惠力度。地址：<a href="https://www.aliyun.com/minisite/goods?userCode=xbifxhv7" target="_blank" rel="noopener">【阿里云官方服务器活动页面】</a></p>
-<p>关于配置，如果是建立个人博客网站的话，基本上这里的服务器都已经足够用了。</p>
-<p>在购买的时候，一般选择包月带宽、能取消的附加服务全部取消，最后的费用就会和活动页面看到的一样。地区选择离自己最近的。版本选择是centos7即可。</p>
-<p><img src="https://pic.downk.cc/item/5f12f8a714195aa5947f5f91.jpg" alt=""></p>
-<p>购买后，进入ESC服务器管理后台。</p>
-<p><img src="https://pic.downk.cc/item/5f12f8c314195aa5947f6bee.jpg" alt=""></p>
-<p>务必先重置密码：改成自己记得住的。修改密码后务必重新启动服务器生效</p>
-<p><img src="https://pic.downk.cc/item/5f12f8db14195aa5947f75e0.jpg" alt=""></p>
-<p>生效后，连接服务器</p>
-<p><img src="https://pic.downk.cc/item/5f12f8ef14195aa5947f7ff9.jpg" alt=""></p>
-<p>输入信息，进入服务器</p>
-<p><img src="https://pic.downk.cc/item/5f12f90014195aa5947f86c1.jpg" alt=""></p>
-<h2 id="三、安装宝塔面板"><a href="#三、安装宝塔面板" class="headerlink" title="三、安装宝塔面板"></a>三、安装宝塔面板</h2><p>进入服务器以后，我们先去<a href="https://www.bt.cn/?invite_code=MV9waHp3Y2w=" target="_blank" rel="noopener">宝塔官网</a>【宝塔Linux面板】复制代码</p>
-<p><img src="https://pic.downk.cc/item/5f12f91814195aa5947f8f0e.jpg" alt=""></p>
-<p>CentOS一键安装宝塔面板代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y wget &amp;&amp; wget -O install.sh http:&#x2F;&#x2F;download.bt.cn&#x2F;install&#x2F;install_6.0.sh &amp;&amp; sh install.sh</span><br></pre></td></tr></table></figure>
-
-<p>将代码粘进服务器命令行，回车，输入y，然后再回车</p>
-<p><img src="https://pic.downk.cc/item/5f12f98014195aa5947fb9e0.jpg" alt=""></p>
-<p>等待3分钟左右，</p>
-<p>即可拿到面板访问地址，用户名，密码，先将这一串复制出来，存在记事本备用。</p>
-<p><img src="https://pic.downk.cc/item/5f12f99a14195aa5947fc78c.jpg" alt=""></p>
-<p>回到服务器控制台，进入安全组配置</p>
-<p><img src="https://pic.downk.cc/item/5f12f9b414195aa5947fd49c.jpg" alt=""></p>
-<p>进行规则配置</p>
-<p><img src="https://pic.downk.cc/item/5f12f9cd14195aa5947fe0dd.jpg" alt=""></p>
-<p>入方向和出方向都要配置！！！</p>
-<p><img src="https://pic.downk.cc/item/5f12f9ef14195aa5947fedec.jpg" alt=""></p>
-<h2 id="四、一键部署wordpress"><a href="#四、一键部署wordpress" class="headerlink" title="四、一键部署wordpress"></a>四、一键部署wordpress</h2><p>配置好后，就可以通过宝塔管理我们的服务器了。</p>
-<p>访问刚刚安装宝塔得到的链接</p>
-<p><img src="https://pic.downk.cc/item/5f12fa0214195aa5947ff55d.jpg" alt=""></p>
-<p>点击一键部署，然后进行信息配置，然后提交</p>
-<p><img src="https://pic.downk.cc/item/5f12fa1514195aa5947ffdc4.jpg" alt=""></p>
-<p>拿到访问链接。</p>
-<p><img src="https://pic.downk.cc/item/5f12fa6914195aa5948019ef.jpg" alt=""></p>
-<p>如果它给了数据库的信息，那我们就跳过数据库创建的一步，如果没有，那么我们就先进行下数据库的创建。填写后可以先记下数据库名，用户名，账号名【如果忘记了，也可以在数据库列表那里看】</p>
-<p><img src="https://pic.downk.cc/item/5f12fa7d14195aa594802104.jpg" alt=""></p>
-<p>提交以后，访问刚刚拿到的访问链接，选择简体中文进行安装</p>
-<p><img src="https://pic.downk.cc/item/5f12fa9114195aa5948027a5.jpg" alt=""></p>
-<p>等待跳转后，填入相关信息。【如果跳转时间比较久，可以关闭页面，重新访问】</p>
-<p><img src="https://pic.downk.cc/item/5f12faab14195aa594802f8d.jpg" alt=""></p>
-<p><img src="https://pic.downk.cc/item/5f12fac914195aa594803879.jpg" alt=""></p>
-<p>到达这一步说明连接好数据库了。点击安装，填入网站信息即可。</p>
-<p><img src="https://pic.downk.cc/item/5f12fae714195aa594804502.jpg" alt=""></p>
-<p><img src="https://pic.downk.cc/item/5f12fb0114195aa594804f52.jpg" alt=""></p>
-<p>到此为止，wordpress已经安装完成</p>
-<p><img src="https://pic.downk.cc/item/5f12fb1614195aa59480574c.jpg" alt=""></p>
-<blockquote>
-<p>首页地址：http://你的IP</p>
-</blockquote>
-<blockquote>
-<p>后台地址：http://你的IP/wp-admin/</p>
-</blockquote>
-<p>至此，你已经可以通过访问IP来访问你的网站</p>
-<h2 id="五、绑定域名"><a href="#五、绑定域名" class="headerlink" title="五、绑定域名"></a>五、绑定域名</h2><p>如果你想要自己的网站更好记一点，不需要繁琐的IP地址，只需要一个域名，如果你在第一步有了域名，那么现在进入域名后台，进行域名解析。</p>
-<h3 id="国内大陆服务器需要备案"><a href="#国内大陆服务器需要备案" class="headerlink" title="国内大陆服务器需要备案"></a>国内大陆服务器需要备案</h3><p>注意：国内的服务器绑定域名需要备案的哦，备案时长大概7个工作日。根据指示一步步上传站长资料即可。</p>
-<p><img src="https://pic.downk.cc/item/5f12fb4b14195aa594806a9d.jpg" alt=""></p>
-<p><img src="https://pic.downk.cc/item/5f12fb6014195aa59480749e.jpg" alt=""></p>
-<p>然后等待十分钟，你就可以通过域名，以及www.域名访问你的网站了</p>
-<h3 id="免备案云服务器"><a href="#免备案云服务器" class="headerlink" title="免备案云服务器"></a>免备案云服务器</h3><p>如果你不想备案，想要直接就可以上线访问的话，可以选择你香港或者海外的云服务器，根据个人使用体验，腾讯云的香港云服务器比阿里云的香港服务器速度更快，体验更好。<a href="https://cloud.tencent.com/act/pro/overseas?fromSource=gwzcw.1293314.1293314.1293314&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d" target="_blank" rel="noopener">【点击进入腾讯云香港及海外云服务器优惠专区】</a></p>
-<h2 id="六、结束语"><a href="#六、结束语" class="headerlink" title="六、结束语"></a>六、结束语</h2><p>到此为止，在linux操作系统上的WordPress建站程序已经安装完毕，你可以开始经营属于自己的网站了。</p>
-<h3 id="附优惠购买链接："><a href="#附优惠购买链接：" class="headerlink" title="附优惠购买链接："></a>附优惠购买链接：</h3><p><a href="https://www.aliyun.com/minisite/goods?userCode=xbifxhv7" target="_blank" rel="noopener">【阿里云最新优惠活动及价值2000元代金券领取地址】</a></p>
-<p><a href="https://cloud.tencent.com/act/cps/redirect?redirect=1062&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d&from=console" target="_blank" rel="noopener">【腾讯云最新优惠秒杀活动】</a></p>
-<p><a href="https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d&from=console" target="_blank" rel="noopener">【腾讯云新手代金券价值2860元大礼包】</a></p>
-<br>
-<br>
-
-<p><code>原文地址：https://xiaomoujia.cn/2020/04/19/570/</code></p>
-
       
     </div>
     
+      
+        <div class="button readmore">
+          <a href="/cloudweb/linux-jianzhan-wordpress.html">
+            阅读全文 <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
       
     
   </section>
@@ -1101,35 +965,15 @@
         <h3 id="在一台云服务器上如何创建多个网站？"><a href="#在一台云服务器上如何创建多个网站？" class="headerlink" title="在一台云服务器上如何创建多个网站？"></a>在一台云服务器上如何创建多个网站？</h3><p>其实很简单，我们以<a href="https://www.aliyun.com/minisite/goods?userCode=xbifxhv7" target="_blank" rel="noopener">阿里云服务器</a>为例。教大家用宝塔面板一键部署，轻松添加多个站点。（在步骤12）</p>
 <p>什么是<a href="https://www.bt.cn/?invite_code=MV9waHp3Y2w=" target="_blank" rel="noopener">宝塔面板</a>：宝塔Linux面板是提升运维效率的服务器管理软件，支持一键LAMP/LNMP/集群/监控/网站/FTP/数据库/JAVA等100多项服务器管理功能。</p>
 <p>搭建之前，请先将你的域名解析到云服务器公网ip，新手可以选择“快速添加网站解析”，如下图：<br><img src="https://pic.downk.cc/item/5f1279b614195aa5945884f6.jpg" alt=""></p>
-<p>1.购买好云服务器后，登陆到你的控制台，找到你购买的“云服务器”，登陆进去。<br><img src="https://pic.downk.cc/item/5f1279d614195aa594589337.jpg" alt=""></p>
-<p>2.这时候应该打开了云服务器的命令行终端（阿里云或<a href="https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d&from=console" target="_blank" rel="noopener">腾讯云</a>登陆后都是一样的），我们只需把下面一行代码输入，然后按回车键即可。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y wget &amp;&amp; wget -O install.sh http:&#x2F;&#x2F;download.bt.cn&#x2F;install&#x2F;install_6.0.sh &amp;&amp; sh install.sh</span><br></pre></td></tr></table></figure>
-<p><img src="https://pic.downk.cc/item/5f1279e414195aa594589949.jpg" alt=""><br>3.我们耐心等待一会儿，等宝塔面板自动安装完成（中间若出现是否安装*Y/N？时，我们只需要输入y就行了）。<br><img src="https://pic.downk.cc/item/5f1279f214195aa594589dbc.jpg" alt=""></p>
-<p>安装完成后，我们接着再命令行输入bt，这个时候就会显示面板的使用帮助菜单选项。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bt</span><br></pre></td></tr></table></figure>
-<p>4.这时候我们输入数字14，就能看到宝塔面板的登录地址还有用户名和密码。<br><img src="https://pic.downk.cc/item/5f127a0714195aa59458a3e9.jpg" alt=""></p>
-<p>5.我们把登录地址复制到浏览器打开，输入用户名和密码，进入到宝塔面板的后台管理页面。一般来说， 首次登陆进来面板后，会自动推荐你安装环境套件，这里有两种选择，第一种是LNMP套件，第二种是LAMP套件 。如图（建议选择一键安装LNMP）<br><img src="https://pic.downk.cc/item/5f127a1214195aa59458a70e.jpg" alt=""></p>
-<p>6.为安全起见，建议修改你的用户名和密码，以及面板默认端口。<br><img src="https://pic.downk.cc/item/5f127a2114195aa59458abb3.jpg" alt=""></p>
-<p>注意：修改面板端口之前，记得在你的阿里云或者腾讯云控制台，找到你的云服务器，在“安全组”一栏下修改规则，选择入站规则下的“添加规则”。<br><img src="https://pic.downk.cc/item/5f127a2f14195aa59458b0ee.jpg" alt=""><br><img src="https://pic.downk.cc/item/5f127a3c14195aa59458b622.jpg" alt=""></p>
-<p>关于其他的安全设置，我们下一篇文章再讲，这里就先设置到这里。</p>
-<p>7.下面我们开始来一键部署WordPress建站程序，（提示：如果前面你没有安装LNMP环境或者LAMP环境，也不要着急，我们可以在软件搜索步骤5列出的几个套件手动安装），点击面板左侧“软件商店”，然后找到WordPress，选择一键部署。<br><img src="https://pic.downk.cc/item/5f127a4a14195aa59458bc28.jpg" alt=""></p>
-<p>8.输入你的网站信息，即你的域名。另外，为了避免出现不可知的错误，新手建议不要修改默认创建的数据库名和密码，自己把它存储好就行。（当点击提交后，系统会自动列出数据库名和密码以及网站地址，请保存好这些信息，后面进入WordPress安装需要填写）<br><img src="https://pic.downk.cc/item/5f127a5714195aa59458bff6.jpg" alt=""></p>
-<p>9.在线安装WordPress网站程序的时候，先选择语言“简体中文”，然后填写数据库名和密码（就是上一步叫你保存的）</p>
-<p><img src="https://pic.downk.cc/item/5f127a6314195aa59458c33f.jpg" alt=""></p>
-<p><img src="https://pic.downk.cc/item/5f127a6f14195aa59458c71e.jpg" alt=""><br><img src="https://pic.downk.cc/item/5f127a7914195aa59458cac7.jpg" alt=""><br><img src="https://pic.downk.cc/item/5f127a8614195aa59458ced8.jpg" alt=""><br>10.安装完成后，登陆你的Wordpress管理后台。（后台登陆地址为：你的网址或ip/wp-admin）<br><img src="https://pic.downk.cc/item/5f127a9314195aa59458d281.jpg" alt=""></p>
-<p><img src="https://pic.downk.cc/item/5f127a9f14195aa59458d623.jpg" alt=""><br>11.到这里，你的WordPress网站就搭建成了。接着你可以去发布文章或更换主题，以及后期的维护等等，这里就不细说了。</p>
-<p>12.最后，如何在宝塔面板管理添加站点呢？点击左侧“网站”，选择右边的“添加站点”。接着在弹出的窗口里，填写好你的新站点信息即可。（如果只是部署静态网站的话，就不需要创建数据库）<br><img src="https://pic.downk.cc/item/5f127ab414195aa59458e03c.jpg" alt=""><br><img src="https://pic.downk.cc/item/5f127ac014195aa59458e4d7.jpg" alt=""></p>
-<p>13.然后访问你的网站地址就会显示创建成功！<br><img src="https://pic.downk.cc/item/5f127ad014195aa59458eb7f.jpg" alt=""></p>
-<p>14.接着你可以将你的静态网站源码上传到你的网站目录里，也可以手动部署WordPress网站（需要在上一步里创建数据库）。<br><img src="https://pic.downk.cc/item/5f127ade14195aa59458f1da.jpg" alt=""></p>
-<p>15.当然，如果你要做的是Wordpress网站，那么建议你先不要添加站点（即省略以上添加站点的步骤），直接在面板左侧“软件商店”选择一键 部署WordPress即可（这时会帮你自己创建数据库，或者手动更改也行），同时也会自动创建站点，部署WordPress成功后，回到你的“网站”目录里就可以看到自己的站点了。<br><img src="https://pic.downk.cc/item/5f127a4a14195aa59458bc28.jpg" alt=""></p>
-<p>以上讲到了宝塔面板部署WordPress网站，部署静态网站，以及创建多个站点的方法，相信大家自己操作一遍就会了。</p>
-<h3 id="云服务器优惠券领取："><a href="#云服务器优惠券领取：" class="headerlink" title="云服务器优惠券领取："></a>云服务器优惠券领取：</h3><p><a href="https://www.aliyun.com/minisite/goods?userCode=xbifxhv7" target="_blank" rel="noopener">阿里云服务器优惠活动及2000元代金券</a></p>
-<p><a href="https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d&from=console" target="_blank" rel="noopener">腾讯云价值2680元新手大礼包</a></p>
-<p><a href="https://cloud.tencent.com/act/cps/redirect?redirect=1062&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d&from=console" target="_blank" rel="noopener">腾讯云爆款1核2G云服务器，首年99元，立即抢购！</a><br><br></p>
-
       
     </div>
     
+      
+        <div class="button readmore">
+          <a href="/btweb/bt-jz-dt.html">
+            阅读全文 <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
       
     
   </section>
@@ -1387,39 +1231,15 @@
 <p>MAMP(Macintosh)</p>
 <p>操作系统 - 跨平台</p>
 <p>浏览器支持 - IE(Internet Explorer 8＆amp; plus;)，Firefox，Google Chrome，Safari，Opera</p>
-<p>PHP兼容性 - PHP 5.2＆amp; plus;</p>
-<p>下载WordPress</p>
-<p>当您打开链接 <a href="https://wordpress.org/download/" target="_blank" rel="noopener">https://wordpress.org/download/</a> 时，您将获得 看到一个屏幕作为以下快照 -<br><img src="https://pic.downk.cc/item/5f126fea14195aa594556310.jpg" alt=""><br>创建存储数据库</p>
-<p>WordPress需要MySQL数据库。 所以用用户/密码创建一个新的空数据库(例如，用户为“root”，密码为“root”，否则你可以根据自己的方便设置)。</p>
-<p>然后，您可以继续进行安装过程，如下所述。</p>
-<p>安装向导</p>
-<p>将WordPress设置到您的系统很容易。 以下步骤介绍如何在系统上本地设置WordPress。</p>
-<p>步骤(1) - 提取下载的WordPress文件夹，并将其上传到您的Web服务器或本地主机。</p>
-<p>步骤(2) - 打开浏览器并导航到您的WordPress文件路径，然后您将获得WordPress安装程序的第一个屏幕，如下面的屏幕所示。 在我们的例子中，路径是localhost / <Your_wordpress_folder>。<br><img src="https://pic.downk.cc/item/5f12700f14195aa594556de1.jpg" alt=""></p>
-<p>选择您的WordPress的语言，然后单击Continue。</p>
-<p>步骤(3) - 在此步骤中，您可以在继续安装WordPress之前查看数据库所需的信息。<br><img src="https://pic.downk.cc/item/5f12703414195aa59455782d.jpg" alt=""><br>点击Let’s go!</p>
-<p>步骤(4) - 在这里，您必须输入有关MySQL数据库的信息，如下面的屏幕所述。<br><img src="https://pic.downk.cc/item/5f12704914195aa594557e21.jpg" alt=""><br>Database Name - 输入在MySQL数据库中为WordPress创建的数据库名称。</p>
-<p>Username - 输入MySQL数据库的用户名。</p>
-<p>Password - 输入您为MySQL数据库设置的密码。</p>
-<p>Database Host - 写入主机名，默认情况下为localhost。</p>
-<p>Table Prefix - 用于在数据库表中添加前缀，这有助于在同一数据库上运行多个站点。 它采用默认值。</p>
-<p>填写所有信息后，点击Submit按钮。</p>
-<p>步骤(5) - WordPress检查数据库设置，并给出确认屏幕，如下面的快照所示。<br><img src="https://pic.downk.cc/item/5f12706d14195aa594558bdb.jpg" alt=""><br>点击RUN the install</p>
-<p>步骤(6) - 输入管理信息。<br><img src="https://pic.downk.cc/item/5f12707c14195aa5945590fb.jpg" alt=""><br>它包含以下字段 -</p>
-<p>Site Title- 输入要在WordPress中创建的网站的名称。</p>
-<p>Username- 在登录WordPress时根据您的选择输入用户名。</p>
-<p>Password twice - 输入两次密码以保护您的网站。</p>
-<p>Your E-mail- 输入您的电子邮件地址，以帮助恢复密码或任何更新。</p>
-<p>Privacy - 允许搜索引擎在选中此复选框后对此网站编制索引。</p>
-<p>填写完所有信息后，单击Install WordPress 按钮。</p>
-<p>步骤(7) - 安装成功后，您将看到一个显示成功的屏幕，如以下屏幕所示。<br><img src="https://pic.downk.cc/item/5f12709114195aa594559853.jpg" alt=""><br>您可以查看在WordPress中添加的用户名和密码详细信息。</p>
-<p>单击 Log In 按钮。</p>
-<p>步骤(8) - 点击登录后，您将获得一个WordPress管理面板，如下面的屏幕所示。<br><img src="https://pic.downk.cc/item/5f1270a614195aa594559ed8.jpg" alt=""><br>输入您在安装过程中提到的用户名和密码，如步骤6所示，然后单击 Log In 按钮。</p>
-<h2 id="二、点击获取详细教程"><a href="#二、点击获取详细教程" class="headerlink" title="二、点击获取详细教程"></a>二、点击获取详细教程</h2><p>地址：<a href="https://www.w3cschool.cn/wordpress/wordpress_installation.html" target="_blank" rel="noopener">https://www.w3cschool.cn/wordpress/wordpress_installation.html</a></p>
-
       
     </div>
     
+      
+        <div class="button readmore">
+          <a href="/wpweb/wordpress-jiaocheng.html">
+            阅读全文 <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
       
     
   </section>
@@ -1541,14 +1361,15 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>做SEO的大家都知道如果文章中过多的外链会分散了该页面的权重，这样是不利于网站排名的。所以网站内页最好是尽量不要链接向外部。但是在某些情况下我们不得不链接向外部，那么该如何处理呢？其实我们可以给外部链接加上nofollow属性，对蜘蛛声明不要爬取这条链接。这样就可以有效的解决权重流失的问题。但是在编辑文章中一条链接一条链接的加nofollow属性工作量实在太大了，小V就来教大家让wordpress给文章中的外链自动添加nofollow属性。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">add_filter( &#39;the_content&#39;, &#39;v7v3_seo_wl&#39;);</span><br><span class="line"></span><br><span class="line">function v7v3_seo_wl( $content ) &#123;</span><br><span class="line"></span><br><span class="line">    $regexp &#x3D; &quot;&lt;a\s[^&gt;]*href&#x3D;(\&quot;??)([^\&quot; &gt;]*?)\\1[^&gt;]*&gt;&quot;;</span><br><span class="line"></span><br><span class="line">    if(preg_match_all(&quot;&#x2F;$regexp&#x2F;siU&quot;, $content, $matches, PREG_SET_ORDER)) &#123;</span><br><span class="line"></span><br><span class="line">        if( !emptyempty($matches) ) &#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            $srcUrl &#x3D; get_option(&#39;siteurl&#39;);</span><br><span class="line"></span><br><span class="line">            for ($i&#x3D;0; $i &lt; count($matches); $i++)</span><br><span class="line"></span><br><span class="line">            &#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                $tag &#x3D; $matches[$i][0];</span><br><span class="line"></span><br><span class="line">                $tag2 &#x3D; $matches[$i][0];</span><br><span class="line"></span><br><span class="line">                $url &#x3D; $matches[$i][0];</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                $noFollow &#x3D; &#39;&#39;;</span><br><span class="line"></span><br><span class="line">                $pattern &#x3D; &#39;&#x2F;target\s*&#x3D;\s*&quot;\s*_blank\s*&quot;&#x2F;&#39;;</span><br><span class="line"></span><br><span class="line">                preg_match($pattern, $tag2, $match, PREG_OFFSET_CAPTURE);</span><br><span class="line"></span><br><span class="line">                if( count($match) &lt; 1 )</span><br><span class="line"></span><br><span class="line">                    $noFollow .&#x3D; &#39; target&#x3D;&quot;_blank&quot; &#39;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                $pattern &#x3D; &#39;&#x2F;rel\s*&#x3D;\s*&quot;\s*[n|d]ofollow\s*&quot;&#x2F;&#39;;</span><br><span class="line"></span><br><span class="line">                preg_match($pattern, $tag2, $match, PREG_OFFSET_CAPTURE);</span><br><span class="line"></span><br><span class="line">                if( count($match) &lt; 1 )</span><br><span class="line"></span><br><span class="line">                    $noFollow .&#x3D; &#39; rel&#x3D;&quot;nofollow&quot; &#39;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                $pos &#x3D; strpos($url,$srcUrl);</span><br><span class="line"></span><br><span class="line">                if ($pos &#x3D;&#x3D;&#x3D; false) &#123;</span><br><span class="line"></span><br><span class="line">                    $tag &#x3D; rtrim ($tag,&#39;&gt;&#39;);</span><br><span class="line"></span><br><span class="line">                    $tag .&#x3D; $noFollow.&#39;&gt;&#39;;</span><br><span class="line"></span><br><span class="line">                    $content &#x3D; str_replace($tag2,$tag,$content);</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    $content &#x3D; str_replace(&#39;]]&gt;&#39;, &#39;]]&gt;&#39;, $content);</span><br><span class="line"></span><br><span class="line">    return $content;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>将以上代码加入到当前主题的functions.php文件即可实现，换主题的时候记得把这段代码加到新主题里噢，不然换主题后文章中的外部链接就会变成无nofollow属性的了。<br><br></p>
-<p><code>原文地址：http://www.bokebu.com/wordpresswen-zhang-wai-lian-zi-dong-tian-jia-nofollowshu-xing.html</code></p>
-
       
     </div>
     
+      
+        <div class="button readmore">
+          <a href="/wpweb/wordpress-wl-zd-nofollow.html">
+            阅读全文 <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
       
     
   </section>
@@ -1673,50 +1494,15 @@
 <p>WordPress图片延迟加载的介绍</p>
 <p>预加载，顾名思义，在超出网站可视范围内，图片不做加载，等到用户滚动浏览器窗口，图片元素到达可视范围内，开始加载图片，这样的方式可以打打的节省网站的资源和加快网站加载的速度，所以对于图片较多的wordpress网站来说，图片预加载功能还是非常的好的。</p>
 <p>图片预加载的核心：lazyload。</p>
-<p>对于lazyload有网站编程经验的朋友应该都很熟悉，图片预加载的功能实现就是这个js文件来实现的。</p>
-<p>使用lazyload有两种方式，一种是使用插件，一种是直接集成在主题中的非插件方式，下面我们首先介绍一下非插件实现lazyload：</p>
-<p>新版 jquery.lazyload.js 插件，要求必须给图片地址添加一个data-original属性，例如下：</p>
-<pre><code>&lt;img class=&quot;lazy&quot; data-original=&quot;img/example.jpg&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;</code></pre><p>所以，我们要给wordpress主题里，有图片展示的地方加上data-original属性才行。</p>
-<p>然后往header.php中加载文件：</p>
-<pre><code>&lt;script src=&quot;&lt;?php echo get_template_directory_uri(); ?&gt;/js/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
-
-&lt;script src=&quot;&lt;?php echo get_template_directory_uri(); ?&gt;/js/jquery.lazyload.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-
-    $(function() {
-
-        $(&quot;img&quot;).lazyload({
-
-            effect:&quot;fadeIn&quot;
-
-          });
-
-        });
-
-&lt;/script&gt;</code></pre><p>加载了js这些后，网站里图片就能够实现延迟加载了，但是文章里的图片貌似还没有实现WordPress图片延迟加载，下面就是给wordpress里文章里插入的图片加data-original属性了，将下面代码贴进wordpress主题文件夹的functions.php内</p>
-<pre><code>add_filter (&apos;the_content&apos;, &apos;lazyload&apos;);
-
-function lazyload($content) {
-
-    $loadimg_url=get_bloginfo(&apos;template_directory&apos;).&apos;/images/loading.gif&apos;;
-
-    if(!is_feed()||!is_robots) {
-
-        $content=preg_replace(&apos;/&lt;img(.+)src=[\&apos;&quot;]([^\&apos;&quot;]+)[\&apos;&quot;](.*)&gt;/i&apos;,&quot;&lt;img\$1data-original=\&quot;\$2\&quot; src=\&quot;$loadimg_url\&quot;\$3&gt;\n&lt;noscript&gt;\$0&lt;/noscript&gt;&quot;,$content);
-
-    }
-
-    return $content;
-
-}</code></pre><p>经过这两步骤，网站就实现了WordPress图片延迟加载了！</p>
-<br>
-
-<p><code>原文地址：http://www.bokebu.com/wordpresstu-pian-yan-chi-jia-zai-de-shi-xian-dai-ma-pian.html</code></p>
-
       
     </div>
     
+      
+        <div class="button readmore">
+          <a href="/wpweb/wordpress-dm-yz.html">
+            阅读全文 <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
       
     
   </section>
@@ -1840,25 +1626,15 @@ function lazyload($content) {
         <p>云服务器的配置选择，和网站或应用的类型、访问量、数据量大小、程序质量等因素有关，建议和您的网站或应用的开发技术人员沟通，选择最适合您的配置。</p>
 <p>如果您没有技术人员可提供建议，可以参考我们的建议进行配置选择。网站初始阶段访问量小，只需要一台低配置的服务器即可，应用程序、数据库、文件等所有资源均在一台服务器上。</p>
 <p>腾讯云服务器具有强大的弹性扩展和快速开通能力。随着业务的增长，你可以随时在线增加服务器的CPU、内存、硬盘以及带宽等配置，或者增加服务器数量，无需担心低配服务器在业务突增时带来的资源不足问题，不让一个用户流失。</p>
-<h2 id="腾讯云服务器配置方案："><a href="#腾讯云服务器配置方案：" class="headerlink" title="腾讯云服务器配置方案："></a>腾讯云服务器配置方案：</h2><p>普通的个人小型网站，个人博客等小流量网站，可选择低配置的腾讯云服务器</p>
-<p>推荐配置：CPU：1核、内存1G或2G、硬盘40G、带宽：1M或2M</p>
-<p>论坛、门户类网站：论坛、门户类网站，用户活跃性与访问量较高，为了保证足够的服务器资源空间，提升访问速度。</p>
-<p>推荐配置：CPU：2核、内存：4G、硬盘120G、带宽：3M</p>
-<p>品牌官网类网站：对官网、品牌较为重视的政府、企业等，  为了保证网站浏览更加流利顺畅，提升政府、品牌形象。</p>
-<p>推荐配置：CPU：4核、内存：8G、硬盘150G、带宽：4M</p>
-<p>视频、购物类网站：视频、购物类网站，包含庞大的数据信息， 为了保证迅速的信息处理能力保证网站的点播、交易正常进行。</p>
-<p>推荐配置：CPU：8核、内存：8G、硬盘300G、带宽：10M以上</p>
-<p>游戏、软件类网站：对开发、测试、环境要求较高的游戏软件类网站，需要较高的资源配置带来更强劲的计算性能，保证业务需求。</p>
-<p>推荐配置：CPU：16核、内存：16G、硬盘：500G、带宽：10M</p>
-<h3 id="优惠购买链接："><a href="#优惠购买链接：" class="headerlink" title="优惠购买链接："></a>优惠购买链接：</h3><p>在购买之前记得先<a href="https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d&from=console" target="_blank" rel="noopener">点击领取腾讯云优惠券</a></p>
-<p><a href="https://cloud.tencent.com/act/cps/redirect?redirect=1062&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d&from=console" target="_blank" rel="noopener">腾讯云爆款1核2G云服务器，首年99元，立即抢购！</a><br><br></p>
-<br>
-
-<p><code>原文地址：https://cloud.tencent.com/developer/article/1447144</code></p>
-
       
     </div>
     
+      
+        <div class="button readmore">
+          <a href="/cloudweb/how-to-choose-qcloud.html">
+            阅读全文 <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
       
     
   </section>

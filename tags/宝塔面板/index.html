@@ -18,7 +18,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>标签：宝塔面板 - 建站教程</title>
+  <title>Tag: 宝塔面板 - 建站教程</title>
   
 
   
@@ -681,35 +681,15 @@
         <h3 id="在一台云服务器上如何创建多个网站？"><a href="#在一台云服务器上如何创建多个网站？" class="headerlink" title="在一台云服务器上如何创建多个网站？"></a>在一台云服务器上如何创建多个网站？</h3><p>其实很简单，我们以<a href="https://www.aliyun.com/minisite/goods?userCode=xbifxhv7" target="_blank" rel="noopener">阿里云服务器</a>为例。教大家用宝塔面板一键部署，轻松添加多个站点。（在步骤12）</p>
 <p>什么是<a href="https://www.bt.cn/?invite_code=MV9waHp3Y2w=" target="_blank" rel="noopener">宝塔面板</a>：宝塔Linux面板是提升运维效率的服务器管理软件，支持一键LAMP/LNMP/集群/监控/网站/FTP/数据库/JAVA等100多项服务器管理功能。</p>
 <p>搭建之前，请先将你的域名解析到云服务器公网ip，新手可以选择“快速添加网站解析”，如下图：<br><img src="https://pic.downk.cc/item/5f1279b614195aa5945884f6.jpg" alt=""></p>
-<p>1.购买好云服务器后，登陆到你的控制台，找到你购买的“云服务器”，登陆进去。<br><img src="https://pic.downk.cc/item/5f1279d614195aa594589337.jpg" alt=""></p>
-<p>2.这时候应该打开了云服务器的命令行终端（阿里云或<a href="https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d&from=console" target="_blank" rel="noopener">腾讯云</a>登陆后都是一样的），我们只需把下面一行代码输入，然后按回车键即可。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y wget &amp;&amp; wget -O install.sh http:&#x2F;&#x2F;download.bt.cn&#x2F;install&#x2F;install_6.0.sh &amp;&amp; sh install.sh</span><br></pre></td></tr></table></figure>
-<p><img src="https://pic.downk.cc/item/5f1279e414195aa594589949.jpg" alt=""><br>3.我们耐心等待一会儿，等宝塔面板自动安装完成（中间若出现是否安装*Y/N？时，我们只需要输入y就行了）。<br><img src="https://pic.downk.cc/item/5f1279f214195aa594589dbc.jpg" alt=""></p>
-<p>安装完成后，我们接着再命令行输入bt，这个时候就会显示面板的使用帮助菜单选项。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bt</span><br></pre></td></tr></table></figure>
-<p>4.这时候我们输入数字14，就能看到宝塔面板的登录地址还有用户名和密码。<br><img src="https://pic.downk.cc/item/5f127a0714195aa59458a3e9.jpg" alt=""></p>
-<p>5.我们把登录地址复制到浏览器打开，输入用户名和密码，进入到宝塔面板的后台管理页面。一般来说， 首次登陆进来面板后，会自动推荐你安装环境套件，这里有两种选择，第一种是LNMP套件，第二种是LAMP套件 。如图（建议选择一键安装LNMP）<br><img src="https://pic.downk.cc/item/5f127a1214195aa59458a70e.jpg" alt=""></p>
-<p>6.为安全起见，建议修改你的用户名和密码，以及面板默认端口。<br><img src="https://pic.downk.cc/item/5f127a2114195aa59458abb3.jpg" alt=""></p>
-<p>注意：修改面板端口之前，记得在你的阿里云或者腾讯云控制台，找到你的云服务器，在“安全组”一栏下修改规则，选择入站规则下的“添加规则”。<br><img src="https://pic.downk.cc/item/5f127a2f14195aa59458b0ee.jpg" alt=""><br><img src="https://pic.downk.cc/item/5f127a3c14195aa59458b622.jpg" alt=""></p>
-<p>关于其他的安全设置，我们下一篇文章再讲，这里就先设置到这里。</p>
-<p>7.下面我们开始来一键部署WordPress建站程序，（提示：如果前面你没有安装LNMP环境或者LAMP环境，也不要着急，我们可以在软件搜索步骤5列出的几个套件手动安装），点击面板左侧“软件商店”，然后找到WordPress，选择一键部署。<br><img src="https://pic.downk.cc/item/5f127a4a14195aa59458bc28.jpg" alt=""></p>
-<p>8.输入你的网站信息，即你的域名。另外，为了避免出现不可知的错误，新手建议不要修改默认创建的数据库名和密码，自己把它存储好就行。（当点击提交后，系统会自动列出数据库名和密码以及网站地址，请保存好这些信息，后面进入WordPress安装需要填写）<br><img src="https://pic.downk.cc/item/5f127a5714195aa59458bff6.jpg" alt=""></p>
-<p>9.在线安装WordPress网站程序的时候，先选择语言“简体中文”，然后填写数据库名和密码（就是上一步叫你保存的）</p>
-<p><img src="https://pic.downk.cc/item/5f127a6314195aa59458c33f.jpg" alt=""></p>
-<p><img src="https://pic.downk.cc/item/5f127a6f14195aa59458c71e.jpg" alt=""><br><img src="https://pic.downk.cc/item/5f127a7914195aa59458cac7.jpg" alt=""><br><img src="https://pic.downk.cc/item/5f127a8614195aa59458ced8.jpg" alt=""><br>10.安装完成后，登陆你的Wordpress管理后台。（后台登陆地址为：你的网址或ip/wp-admin）<br><img src="https://pic.downk.cc/item/5f127a9314195aa59458d281.jpg" alt=""></p>
-<p><img src="https://pic.downk.cc/item/5f127a9f14195aa59458d623.jpg" alt=""><br>11.到这里，你的WordPress网站就搭建成了。接着你可以去发布文章或更换主题，以及后期的维护等等，这里就不细说了。</p>
-<p>12.最后，如何在宝塔面板管理添加站点呢？点击左侧“网站”，选择右边的“添加站点”。接着在弹出的窗口里，填写好你的新站点信息即可。（如果只是部署静态网站的话，就不需要创建数据库）<br><img src="https://pic.downk.cc/item/5f127ab414195aa59458e03c.jpg" alt=""><br><img src="https://pic.downk.cc/item/5f127ac014195aa59458e4d7.jpg" alt=""></p>
-<p>13.然后访问你的网站地址就会显示创建成功！<br><img src="https://pic.downk.cc/item/5f127ad014195aa59458eb7f.jpg" alt=""></p>
-<p>14.接着你可以将你的静态网站源码上传到你的网站目录里，也可以手动部署WordPress网站（需要在上一步里创建数据库）。<br><img src="https://pic.downk.cc/item/5f127ade14195aa59458f1da.jpg" alt=""></p>
-<p>15.当然，如果你要做的是Wordpress网站，那么建议你先不要添加站点（即省略以上添加站点的步骤），直接在面板左侧“软件商店”选择一键 部署WordPress即可（这时会帮你自己创建数据库，或者手动更改也行），同时也会自动创建站点，部署WordPress成功后，回到你的“网站”目录里就可以看到自己的站点了。<br><img src="https://pic.downk.cc/item/5f127a4a14195aa59458bc28.jpg" alt=""></p>
-<p>以上讲到了宝塔面板部署WordPress网站，部署静态网站，以及创建多个站点的方法，相信大家自己操作一遍就会了。</p>
-<h3 id="云服务器优惠券领取："><a href="#云服务器优惠券领取：" class="headerlink" title="云服务器优惠券领取："></a>云服务器优惠券领取：</h3><p><a href="https://www.aliyun.com/minisite/goods?userCode=xbifxhv7" target="_blank" rel="noopener">阿里云服务器优惠活动及2000元代金券</a></p>
-<p><a href="https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d&from=console" target="_blank" rel="noopener">腾讯云价值2680元新手大礼包</a></p>
-<p><a href="https://cloud.tencent.com/act/cps/redirect?redirect=1062&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d&from=console" target="_blank" rel="noopener">腾讯云爆款1核2G云服务器，首年99元，立即抢购！</a><br><br></p>
-
       
     </div>
     
+      
+        <div class="button readmore">
+          <a href="/btweb/bt-jz-dt.html">
+            阅读全文 <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
       
     
   </section>
